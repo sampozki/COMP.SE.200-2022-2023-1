@@ -28,7 +28,7 @@ jobs:
       - name: Coveralls Parallel
         uses: coverallsapp/github-action@master
         with:
-          github-token: ${{ secrets.TOKEN }}
+          github-token: ${{ secrets.github_token }}
           flag-name: run-${{ matrix.node }}
           # This is a parallel build so need this
           parallel: true
@@ -41,5 +41,5 @@ jobs:
       - name: Coveralls Finished
         uses: coverallsapp/github-action@master
         with:
-          github-token: ${{ secrets.TOKEN }}
+          github-token: ${{ secrets.github_token }}
           parallel-finished: true
