@@ -9,5 +9,4 @@ describe('at.js', function(){
         expect(at(object, ['a[0].b.c', 'a[1]'])).to.eql([3, 4])
     });
 
-
 });
