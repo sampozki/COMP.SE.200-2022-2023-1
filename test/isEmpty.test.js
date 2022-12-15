@@ -19,6 +19,10 @@ describe('isEmpty.js', function(){
         expect(isEmpty([null, null, null])).to.equal(false)
     });
     
+    it('Test with a map of null key and value', function(){
+        expect(isEmpty({null: null})).to.equal(false)
+    });
+    
     it('Test with an integer', function(){
         expect(isEmpty(7)).to.equal(true)
     });
