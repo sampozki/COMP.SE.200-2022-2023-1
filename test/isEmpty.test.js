@@ -39,4 +39,20 @@ describe('isEmpty.js', function(){
         expect(isEmpty(null)).to.equal(true)
     });
 
+    it('Test with empty set', function(){
+        expect(isEmpty(new Set())).to.equal(true)
+    });
+
+    it('Test with set', function(){
+        const testSet = new Set()
+        testSet.add({a: 1, b: 2})
+        expect(isEmpty(testSet)).to.equal(false)
+    });
+
+    it('Test with prototype', function(){
+        const b = {prototype: {}};
+        const a = Object.create(b.prototype);
+        expect(a).to.equal(false)
+    });
+
 });
