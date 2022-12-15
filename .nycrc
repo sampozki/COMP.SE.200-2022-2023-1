@@ -1,0 +1,18 @@
+{
+    "exclude": [
+      "**/node_modules/**", "**/test/**", "**/coverage/**", "**/.internal/**"
+    ],
+
+    "include": [
+        "**/src/add.js", "**/src/capitalize.js", "**/src/isEmpty.js", "**/src/toInteger.js"
+    ],
+    
+    "reporter": [
+      "html",
+      "lcov",
+      "text"
+    ],
+    "sourceMap": false,
+    "all": true,
+    "check-coverage": true
+  }
