@@ -5,7 +5,16 @@
     ],
 
     "include": [
-        "**/src/add.js", "**/src/capitalize.js", "**/src/isEmpty.js", "**/src/toInteger.js"
+      "**/src/add.js",
+      "**/src/at.js",
+      "**/src/capitalize.js",
+      "**/src/ceil.js",
+      "**/src/eq.js",
+      "**/src/isEmpty.js",
+      "**/src/map.js",
+      "**/src/slice.js",
+      "**/src/toInteger.js",
+      "**/src/upperFirst.js"
     ],
     
     "reporter": [
