@@ -11,4 +11,8 @@ describe('toInteger.js', function(){
         expect(toInteger(-2.3)).to.equal(-2)
     });
 
+    it('Try to translate string to int', function(){
+        expect(toInteger("asdf")).to.equal(0)
+    });
+
 });
