@@ -52,7 +52,7 @@ describe('isEmpty.js', function(){
     it('Test with prototype', function(){
         const b = {prototype: {}};
         const a = Object.create(b.prototype);
-        expect(a).to.equal(false)
+        expect(a).to.eql({})
     });
 
 });
